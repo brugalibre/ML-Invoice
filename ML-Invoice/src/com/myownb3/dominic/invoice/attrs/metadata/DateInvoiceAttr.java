@@ -1,4 +1,4 @@
-package com.myownb3.dominic.invoice.attrs;
+package com.myownb3.dominic.invoice.attrs.metadata;
 
 /**
  * Describes a attribute of a single invoice (tarmed)-record
