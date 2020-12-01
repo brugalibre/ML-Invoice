@@ -19,6 +19,22 @@ public class IntegerInvoiceAttrImpl extends InvoiceAttrImpl implements DoubleInv
    }
 
    /**
+    * Creates a new {@link IntegerInvoiceAttrImpl} with the given name, sequence and default value
+    * 
+    * @param name
+    *        the name
+    * @param isRelevant4Vectorizing
+    *        <code>true</code> if the {@link InvoiceAttrImpl} is beeing vectorized or <code>false</code> if not
+    * @param sequence
+    *        the sequence
+    * @param defaultValue
+    *        the default value
+    */
+   public IntegerInvoiceAttrImpl(String name, boolean isRelevant4Vectorizing, int sequence, String defaultValue) {
+      super(name, sequence, isRelevant4Vectorizing, ContentType.SERVICES_DATA, defaultValue);
+   }
+
+   /**
     * Creates a new {@link IntegerInvoiceAttrImpl} with the given name and sequence.
     * The default value is "-"
     * 

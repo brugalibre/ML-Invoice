@@ -82,8 +82,8 @@ public class InvoiceAttrs {
    public static final InvoiceAttr SCALE_FACTOR_MT = new DoubleInvoiceAttrImpl("scale_factor_mt", 17200, "1.0");
    public static final InvoiceAttr SCALE_FACTOR_TT = new DoubleInvoiceAttrImpl("scale_factor_tt", 17210, "1.0");
    public static final NominalInvoiceAttr SECTION_CODE = new NominalInvoiceAttrImpl("section_code", 17220, SECTION_CODE_NONE);
-   public static final InvoiceAttr SESSION = new IntegerInvoiceAttrImpl("session", 17240, "1");
-   public static final InvoiceAttr TARIFF_TYPE = new IntegerInvoiceAttrImpl("tariff_type", 17250);
+   public static final InvoiceAttr SESSION = new IntegerInvoiceAttrImpl("session", false, 17240, "1");
+   public static final NominalInvoiceAttr TARIFF_TYPE = new NominalInvoiceAttrImpl("tariff_type", 17250, "-1");
    public static final NominalInvoiceAttr TREATMENT = new NominalInvoiceAttrImpl("treatment", 17260, TREATMENT_AMBULATORY);
    public static final InvoiceAttr UNIT_FACTOR = new DoubleInvoiceAttrImpl("unit_factor", 17270, "1.0");
    public static final InvoiceAttr UNIT_FACTOR_MT = new DoubleInvoiceAttrImpl("unit_factor_mt", 17280);
@@ -95,7 +95,7 @@ public class InvoiceAttrs {
    public static final InvoiceAttr VAT_RATE = new DoubleInvoiceAttrImpl("vat_rate", 17340, "0.0");
    public static final InvoiceAttr COST_FRACTION = new DoubleInvoiceAttrImpl("cost_fraction", 17350, "1.0");
    public static final InvoiceAttr REMARK = new InvoiceAttrImpl("remark", 17360, false);
-   public static final InvoiceAttr SERVICE_ATTRIBUTES = new IntegerInvoiceAttrImpl("service_attributes", 17370, "0");
+   public static final InvoiceAttr SERVICE_ATTRIBUTES = new IntegerInvoiceAttrImpl("service_attributes", false, 17370, "0");
 
    // Patient data
    public static final InvoiceAttr BIRTHDATE =

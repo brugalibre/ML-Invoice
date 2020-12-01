@@ -56,6 +56,7 @@ public class InvoiceAttrValues {
          "prevention", "birthdefect", "unknown");
 
    private static final List<String> GENDER_VALUES = Arrays.asList("male", "female");
+   private static final List<String> TARIF_TYPE_VALUES = Arrays.asList("001", "003", "312", "325");
 
    /**
     * All possible values for the categorical attribute 'body location'
@@ -91,6 +92,14 @@ public class InvoiceAttrValues {
     */
    public static List<String> getCodeValues() {
       return CODE_VALUES;
+   }
+
+   /**
+    * For the given anonymized invoices, this are all possible tarif type values. Note that depending on the data, there might be even more
+    * For total safety, all possible tarif types according tarmed, DRG and so one should be collected
+    */
+   public static List<String> getTarifTypeValues() {
+      return TARIF_TYPE_VALUES;
    }
 
    /**

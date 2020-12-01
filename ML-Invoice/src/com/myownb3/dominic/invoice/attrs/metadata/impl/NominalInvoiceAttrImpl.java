@@ -63,6 +63,8 @@ public class NominalInvoiceAttrImpl extends InvoiceAttrImpl implements NominalIn
          return InvoiceAttrValues.getSectionCodeValues();
       } else if (categoryName.equals(InvoiceAttrs.CODE.getName())) {
          return InvoiceAttrValues.getCodeValues();
+      } else if (categoryName.equals(InvoiceAttrs.TARIFF_TYPE.getName())) {
+         return InvoiceAttrValues.getTarifTypeValues();
       }
       throw new AttrHasNoValuesException("Attribute '" + categoryName + "' has no class values defined!");
    }
